@@ -27,7 +27,7 @@ public class Hesaplama {
             System.out.println("Bu Ay Extra " + extraGun + " Gün Çalıştığı İçin " + extra + " ₺ Prim ile Personel Toplam Maaşı : " + extraliMaas + " ₺ dir.");
         } else {
             maas = calismaGun * gunlukFiyat;
-            System.out.println("Personel Çalışma Gün Sayı " + calismaGun + " Gün Olduğu İçin Personel Maaşı " + maas + "₺ dir.");
+            System.out.println("Personel Çalışma Gün Sayı " + "( " + calismaGun + "*" + gunlukFiyat + " )" + "Gün Olduğu İçin Personel Maaşı " + maas + "₺ dir.");
         }
     }
 
