@@ -3,19 +3,18 @@ package org.muhasebe;
 import java.util.Scanner;
 
 public class Hesaplama {
-    void maas() {
+    public int maas() {
         Scanner input = new Scanner(System.in);
-        int calismaGun;
-        int gunlukFiyat = 400;
-        int gun = 25;
-        int prim = 1000;
-        int extra;
-        int extraGun;
-        int maas;
-        int extraliMaas;
+         int calismaGun;
+         int gunlukFiyat = 400;
+          int gun = 25;
+          int prim = 1000;
+          int extra;
+          int extraGun;
+          int maas;
+          int extraliMaas;
 
-        System.out.print("Personel Çalışma Gün Sayınızı Giriniz : ");
-        calismaGun = input.nextInt();
+        calismaGun = 30;
         if (calismaGun > 31 || calismaGun <=0 ) {
             System.out.println("Lütfen Aylık Maaş Hesaplaması İçin Gün Sayısını 1-30 Arasında Sayı Giriniz. ");
            } else if (calismaGun > 25) {
@@ -29,6 +28,7 @@ public class Hesaplama {
             maas = calismaGun * gunlukFiyat;
             System.out.println("Personel Çalışma Gün Sayı " + "( " + calismaGun + "*" + gunlukFiyat + " )" + "Gün Olduğu İçin Personel Maaşı " + maas + "₺ dir.");
         }
+        return calismaGun;
     }
 
 }
