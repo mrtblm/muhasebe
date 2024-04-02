@@ -1,7 +1,7 @@
 public class Main {
 
-
     public static void main(String[] args) {
-        org.junit.runner.JUnitCore.main("CustomerTest");
+
+        org.testng.TestNG.main(new String[] {"-d","target/test-classes","CustomerTesNG" });
     }
 }

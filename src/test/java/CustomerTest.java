@@ -1,18 +1,17 @@
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
+
 import org.muhasebe.*;
-import static org.junit.Assert.assertArrayEquals;
+import org.testng.annotations.Test;
 import static org.junit.Assert.assertEquals;
 
 public class CustomerTest {
 
-    @Test
+    @Test(groups = "unit")
     public void testCustomerGun() {
         Hesaplama hesaplama = new Hesaplama();
+
         int calismaGun = hesaplama.maas();
         assertEquals(5,calismaGun);
-        System.out.println("Junit Test");
+        System.out.println("testNG");
     }
 
 }
